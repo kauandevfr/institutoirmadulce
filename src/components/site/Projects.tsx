@@ -1,4 +1,4 @@
-import { Baby, Utensils, Users2, HeartHandshake, GraduationCap, HandHeart, Sparkles, HomeIcon, Activity } from "lucide-react";
+import { Baby, Utensils, Users2, HeartHandshake, GraduationCap, Sparkles, HomeIcon, Activity } from "lucide-react";
 
 const projects = [
   {
@@ -36,12 +36,6 @@ const projects = [
     title: "CDI Aconchego",
     tag: "Centro Dia",
     text: "Centro Dia para 30 idosos com diferentes graus de dependência, com suporte também a familiares e cuidadores.",
-  },
-  {
-    icon: HandHeart,
-    title: "Projeto Melhor Idade",
-    tag: "Bem-estar",
-    text: "Atendimento para 50 idosos em situação de vulnerabilidade, com atividades de proteção social básica.",
   },
   {
     icon: Sparkles,
