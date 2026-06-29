@@ -1,5 +1,5 @@
 import { ArrowRight, Heart } from "lucide-react";
-import heroImg from "@/assets/hero-children.jpg";
+import heroAsset from "@/assets/irma-dulce-hero.webp.asset.json";
 
 export function Hero() {
   return (
@@ -7,14 +7,14 @@ export function Hero() {
       {/* Background image */}
       <div className="absolute inset-0 -z-10">
         <img
-          src={heroImg}
-          alt="Crianças sorrindo em um projeto social do Instituto Irmã Dulce"
-          width={1920}
-          height={1280}
+          src={heroAsset.url}
+          alt="Irmã Dulce, protetora dos pobres e fundadora da obra social"
+          width={900}
+          height={506}
           fetchPriority="high"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/75 to-primary/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
       </div>
 
