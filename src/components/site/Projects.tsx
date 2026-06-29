@@ -38,12 +38,6 @@ const projects = [
     text: "Centro Dia para 30 idosos com diferentes graus de dependência, com suporte também a familiares e cuidadores.",
   },
   {
-    icon: HandHeart,
-    title: "Projeto Melhor Idade",
-    tag: "Bem-estar",
-    text: "Atendimento para 50 idosos em situação de vulnerabilidade, com atividades de proteção social básica.",
-  },
-  {
     icon: Sparkles,
     title: "Festa da Criança",
     tag: "Mobilização",
