@@ -7,7 +7,7 @@ const items = [
   { src: meals, label: "Distribuição de marmitex e cestas básicas", span: "lg:col-span-2" },
   { src: daycare, label: "CEI Anjinhos de Dulce", span: "" },
   { src: youth, label: "Atividades no CCA Jardim Aurélio", span: "" },
-  { src: elderly, label: "Projeto Melhor Idade", span: "lg:col-span-2" },
+  { src: elderly, label: "Acolhimento de idosos no CAEI Esperanto", span: "lg:col-span-2" },
 ];
 
 export function Gallery() {
