@@ -1,4 +1,5 @@
 import { Heart } from "lucide-react";
+import logoAsset from "@/assets/logo.avif.asset.json";
 
 export function Footer() {
   return (
@@ -6,8 +7,8 @@ export function Footer() {
       <div className="container-tight grid md:grid-cols-12 gap-10">
         <div className="md:col-span-5">
           <div className="flex items-center gap-3">
-            <span className="grid place-items-center h-11 w-11 rounded-xl bg-primary text-primary-foreground">
-              <Heart className="h-5 w-5" />
+            <span className="grid place-items-center h-14 w-14 rounded-xl bg-background/10 p-1.5">
+              <img src={logoAsset.url} alt="Instituto Irmã Dulce SP" className="h-full w-full object-contain" />
             </span>
             <div>
               <p className="font-display text-lg font-semibold">Instituto Irmã Dulce SP</p>
