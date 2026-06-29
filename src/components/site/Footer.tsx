@@ -7,8 +7,8 @@ export function Footer() {
       <div className="container-tight grid md:grid-cols-12 gap-10">
         <div className="md:col-span-5">
           <div className="flex items-center gap-3">
-            <span className="grid place-items-center h-14 w-14 rounded-xl bg-background/10 p-1.5">
-              <img src={logoAsset.url} alt="Instituto Irmã Dulce SP" className="h-full w-full object-contain" />
+            <span className="grid place-items-center h-40 w-40 rounded-full bg-background/10 p-1.5">
+              <img src={logoAsset.url} alt="Instituto Irmã Dulce SP" className="h-full w-full rounded-full object-contain bg-white" />
             </span>
             <div>
               <p className="font-display text-lg font-semibold">Instituto Irmã Dulce SP</p>
