@@ -36,7 +36,7 @@ export function Donation() {
                 Você também pode apoiar o Instituto destinando seus créditos da Nota Fiscal Paulista. É uma forma simples de contribuir com nossos projetos sociais sem nenhum custo adicional para você.
               </p>
               <a
-                href="#doacao"
+                href="/nota-fiscal-paulista"
                 className="mt-5 inline-flex items-center gap-2 rounded-full border border-border px-6 py-3.5 text-sm font-semibold text-foreground hover:bg-foreground hover:text-background transition-colors"
               >
                 Saiba como doar pela Nota Fiscal Paulista
