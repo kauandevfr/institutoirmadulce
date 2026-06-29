@@ -7,7 +7,7 @@ export function Contact() {
         <div className="lg:col-span-5">
           <span className="text-xs font-semibold tracking-[0.2em] uppercase text-primary">Fale Conosco</span>
           <h2 className="mt-3 font-display text-3xl md:text-5xl font-semibold text-foreground text-balance">
-            Deseja enviar donativos ou se voluntariar?
+            Deseja enviar donativos ou apoiar nossos projetos?
           </h2>
           <p className="mt-5 text-muted-foreground leading-relaxed">
             Estamos prontos para receber sua mensagem, doação ou visita. Entre em contato pelos
