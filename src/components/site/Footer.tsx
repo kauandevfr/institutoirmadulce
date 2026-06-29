@@ -1,5 +1,5 @@
 import { Heart } from "lucide-react";
-import logoAsset from "@/assets/logo.avif.asset.json";
+import logoAsset from "@/assets/logo.png.asset.json";
 
 export function Footer() {
   return (
