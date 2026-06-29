@@ -30,12 +30,12 @@ export function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="container-tight flex items-center justify-between h-16 md:h-20">
+      <div className="container-tight flex items-center justify-between h-32 md:h-36">
         <a href="#inicio" className="flex items-center gap-3 group">
           <img
             src={logoAsset.url}
             alt="Instituto Irmã Dulce SP"
-            className="h-11 md:h-12 w-auto transition-transform group-hover:scale-105"
+            className="h-28 w-28 md:h-36 md:w-36 rounded-full object-contain bg-white transition-transform group-hover:scale-105"
           />
           <span className="hidden sm:flex flex-col leading-tight">
             <span className="font-display text-base md:text-lg font-semibold text-foreground">Instituto Irmã Dulce</span>
