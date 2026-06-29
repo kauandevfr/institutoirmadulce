@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, Heart } from "lucide-react";
+import logoAsset from "@/assets/logo.avif.asset.json";
 
 const links = [
   { href: "#inicio", label: "Início" },
@@ -30,11 +31,13 @@ export function Navbar() {
       }`}
     >
       <div className="container-tight flex items-center justify-between h-16 md:h-20">
-        <a href="#inicio" className="flex items-center gap-2.5 group">
-          <span className="grid place-items-center h-10 w-10 rounded-xl bg-primary text-primary-foreground shadow-soft transition-transform group-hover:scale-105">
-            <Heart className="h-5 w-5" strokeWidth={2.4} />
-          </span>
-          <span className="flex flex-col leading-tight">
+        <a href="#inicio" className="flex items-center gap-3 group">
+          <img
+            src={logoAsset.url}
+            alt="Instituto Irmã Dulce SP"
+            className="h-11 md:h-12 w-auto transition-transform group-hover:scale-105"
+          />
+          <span className="hidden sm:flex flex-col leading-tight">
             <span className="font-display text-base md:text-lg font-semibold text-foreground">Instituto Irmã Dulce</span>
             <span className="text-[10px] md:text-xs uppercase tracking-[0.18em] text-muted-foreground">São Paulo</span>
           </span>
