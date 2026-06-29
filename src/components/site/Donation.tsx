@@ -1,4 +1,4 @@
-import { Heart, Banknote, Package } from "lucide-react";
+import { Heart, Banknote, Package, FileText } from "lucide-react";
 import donationImg from "@/assets/donation-cta.jpg";
 
 export function Donation() {
