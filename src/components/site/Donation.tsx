@@ -29,6 +29,20 @@ export function Donation() {
               </div>
             </div>
 
+            <div className="mt-4 rounded-2xl border border-border p-5">
+              <FileText className="h-5 w-5 text-primary" />
+              <p className="mt-3 font-semibold text-foreground">Doe sem gastar nada</p>
+              <p className="mt-1 text-sm text-muted-foreground max-w-3xl">
+                Você também pode apoiar o Instituto destinando seus créditos da Nota Fiscal Paulista. É uma forma simples de contribuir com nossos projetos sociais sem nenhum custo adicional para você.
+              </p>
+              <a
+                href="#doacao"
+                className="mt-5 inline-flex items-center gap-2 rounded-full border border-border px-6 py-3.5 text-sm font-semibold text-foreground hover:bg-foreground hover:text-background transition-colors"
+              >
+                Saiba como doar pela Nota Fiscal Paulista
+              </a>
+            </div>
+
             <div className="mt-9 flex flex-wrap gap-3">
               <a
                 href="#contato"
