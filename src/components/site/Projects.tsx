@@ -1,4 +1,4 @@
-import { Baby, Utensils, Users2, HeartHandshake, GraduationCap, HandHeart, Sparkles, HomeIcon, Activity } from "lucide-react";
+import { Baby, Utensils, Users2, HeartHandshake, GraduationCap, Sparkles, HomeIcon, Activity } from "lucide-react";
 
 const projects = [
   {
