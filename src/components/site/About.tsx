@@ -46,6 +46,11 @@ export function About() {
               proteção ao consumidor, à ordem econômica, ao patrimônio público, artístico, histórico
               e paisagístico — sempre defendendo direitos humanos e qualquer interesse coletivo.
             </p>
+            <p>
+              O Instituto também atua em serviços de acolhimento, como SAICAs (Serviços de
+              Acolhimento Institucional para Crianças e Adolescentes) e Centros de Acolhida,
+              promovendo cidadania e fortalecimento de vínculos.
+            </p>
             <p className="text-foreground font-medium">
               Há mais de vinte anos atendemos crianças, adolescentes e idosos com atividades de
               recreação, lazer, esporte e cultura.
