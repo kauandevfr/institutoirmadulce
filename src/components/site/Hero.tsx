@@ -1,5 +1,5 @@
 import { ArrowRight, Heart } from "lucide-react";
-import heroImg from "@/assets/hero-children.jpg";
+import heroAsset from "@/assets/irma-dulce-hero.webp.asset.json";
 
 export function Hero() {
   return (
