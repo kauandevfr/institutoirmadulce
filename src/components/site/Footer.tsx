@@ -7,12 +7,12 @@ export function Footer() {
       <div className="container-tight grid md:grid-cols-12 gap-10">
         <div className="md:col-span-5">
           <div className="flex items-center gap-3">
-            <span className="grid place-items-center h-40 w-40 rounded-full bg-background/10 p-1.5">
+            <span className="grid place-items-center h-32 w-32 rounded-full bg-background/10 p-1.5">
               <img src={logoAsset.url} alt="Instituto Irmã Dulce SP" className="h-full w-full rounded-full object-contain bg-white" />
             </span>
             <div>
-              <p className="font-display text-lg font-semibold">Instituto Irmã Dulce SP</p>
-              <p className="text-xs text-background/60">CNPJ: 05.824.978/0001-91</p>
+              <p className="font-display text-2xl font-semibold">Instituto Irmã Dulce SP</p>
+              <p className="text-sm text-background/60">CNPJ: 05.824.978/0001-91</p>
             </div>
           </div>
           <p className="mt-6 text-sm text-background/70 leading-relaxed max-w-sm">
