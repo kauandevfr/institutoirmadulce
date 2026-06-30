@@ -6,4 +6,7 @@ export default defineConfig({
     server: { allowedHosts: ["institutoirmadulce.kauanrodrigues.com.br"] },
     preview: { allowedHosts: ["institutoirmadulce.kauanrodrigues.com.br"] },
   },
+  nitro: {
+    preset: "node-server",
+  },
 });
