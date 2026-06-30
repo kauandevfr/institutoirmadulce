@@ -2,9 +2,9 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export function Contact() {
 
-  const onSubmit = async (e) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const formData = new FormData(e.target);
+    const formData = new FormData(e.currentTarget);
     formData.append("access_key", "d619b33e-be34-4a73-819f-94aa8c6d4efa");
 
     const response = await fetch("https://api.web3forms.com/submit", {
