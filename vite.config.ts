@@ -10,6 +10,15 @@ export default defineConfig({
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
-    server: { entry: "server" },
+    server: {
+      entry: "server",
+      host: "::",
+      port: 1007,
+    },
+    preview: {
+      host: "::",
+      port: 1007,
+      allowedHosts: [".kauanrodrigues.com.br", "institutoirmadulce.kauanrodrigues.com.br"],
+    },
   },
 });
