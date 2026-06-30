@@ -17,7 +17,7 @@ export function Footer() {
           </div>
           <p className="mt-6 text-sm text-background/70 leading-relaxed max-w-sm">
             Organização social sem fins lucrativos inspirada em Santa Dulce dos Pobres, atuando há
-            mais de 19 anos na zona sul de São Paulo.
+            mais de 20 anos na zona sul de São Paulo.
           </p>
         </div>
 

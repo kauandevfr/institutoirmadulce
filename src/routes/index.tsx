@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Há mais de 19 anos transformando vidas na zona sul de São Paulo. Conheça os projetos, doe e faça parte do Instituto Irmã Dulce SP.",
+          "Há mais de 20 anos transformando vidas na zona sul de São Paulo. Conheça os projetos, doe e faça parte do Instituto Irmã Dulce SP.",
       },
       { property: "og:title", content: "Instituto Irmã Dulce SP" },
       {
@@ -51,7 +51,7 @@ export const Route = createFileRoute("/")({
             addressCountry: "BR",
           },
           description:
-            "Organização social sem fins lucrativos inspirada em Santa Dulce dos Pobres, atuando há mais de 19 anos com crianças, adolescentes e idosos em situação de vulnerabilidade na zona sul de São Paulo.",
+            "Organização social sem fins lucrativos inspirada em Santa Dulce dos Pobres, atuando há mais de 20 anos com crianças, adolescentes e idosos em situação de vulnerabilidade na zona sul de São Paulo.",
         }),
       },
     ],

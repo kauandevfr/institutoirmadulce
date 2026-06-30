@@ -22,7 +22,7 @@ export function Hero() {
         <div className="lg:col-span-8 text-primary-foreground animate-slide-up">
           <span className="inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur px-4 py-1.5 text-xs md:text-sm font-medium border border-white/20">
             <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-            ONG sem fins lucrativos · há mais de 19 anos
+            ONG sem fins lucrativos · há mais de 20 anos
           </span>
 
           <h1 className="mt-6 text-balance text-4xl sm:text-5xl lg:text-7xl font-semibold leading-[1.05]">
