@@ -26,7 +26,7 @@ import {
 import nfpHero from "@/assets/nfp-hero.jpg";
 
 const NFP_ANDROID =
-  "https://play.google.com/store/apps/details?id=br.gov.sp.fazenda.nfp";
+  "https://play.google.com/store/apps/details?id=br.gov.sp.fazenda.nfp.app";
 const NFP_IOS =
   "https://apps.apple.com/br/app/nota-fiscal-paulista/id1190556528";
 const NFP_WEB = "https://www.nfp.fazenda.sp.gov.br/";
