@@ -3,9 +3,9 @@ import heroAsset from "@/assets/irma-dulce-hero.webp.asset.json";
 
 export function Hero() {
   return (
-    <section id="inicio" className="relative min-h-dvh flex items-center pt-24 pb-16 overflow-hidden">
+    <section id="inicio" className="relative isolate min-h-dvh flex items-center pt-24 pb-16 overflow-hidden">
       {/* Background image */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 z-0 pointer-events-none">
         <img
           src={heroAsset.url}
           alt="Irmã Dulce, protetora dos pobres e fundadora da obra social"
@@ -15,10 +15,10 @@ export function Hero() {
           className="h-full w-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/75 to-primary/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
       </div>
 
-      <div className="container-tight relative grid lg:grid-cols-12 gap-10 items-center w-full">
+      <div className="container-tight relative z-10 grid lg:grid-cols-12 gap-10 items-center w-full">
         <div className="lg:col-span-8 text-primary-foreground animate-slide-up">
           <span className="inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur px-4 py-1.5 text-xs md:text-sm font-medium border border-white/20">
             <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
@@ -52,7 +52,7 @@ export function Hero() {
 
           <dl className="mt-12 grid grid-cols-3 gap-4 max-w-xl">
             {[
-              { k: "+19", v: "anos de atuação" },
+              { k: "+20", v: "anos de atuação" },
               { k: "+450", v: "vidas impactadas" },
               { k: "+4", v: "parcerias ativas" },
             ].map((s) => (

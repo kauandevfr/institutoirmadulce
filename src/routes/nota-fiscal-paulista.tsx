@@ -168,7 +168,7 @@ const faqs = [
 function NotaFiscalPaulistaPage() {
   return (
     <div className="bg-background text-foreground">
-      <Navbar />
+      <Navbar forceSolid />
       <main>
         {/* Hero */}
         <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">

@@ -1,6 +1,6 @@
-import meals from "@/assets/project-meals.jpg";
-import elderly from "@/assets/project-elderly.jpg";
-import daycare from "@/assets/project-daycare.jpg";
+import meals from "@/assets/project-meals.jpeg";
+import elderly from "@/assets/project-elderly.jpeg";
+import daycare from "@/assets/project-daycare.jpeg";
 import youth from "@/assets/project-youth.jpg";
 
 const items = [

@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
-import elderly from "@/assets/project-elderly.jpg";
-import youth from "@/assets/project-youth.jpg";
+import elderly from "@/assets/project-elderly.jpeg";
+import daycare from "@/assets/project-daycare.jpeg";
 
 export function About() {
   return (
@@ -17,7 +17,7 @@ export function About() {
               className="rounded-3xl aspect-[4/5] object-cover shadow-elegant"
             />
             <img
-              src={youth}
+              src={daycare}
               alt="Crianças e adolescentes em atividade"
               loading="lazy"
               width={1200}

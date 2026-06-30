@@ -156,7 +156,7 @@ export function Donation() {
               <div className="mt-5 rounded-2xl border border-border bg-secondary/50 p-5 space-y-3">
                 <div>
                   <p className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Banco</p>
-                  <p className="mt-1 text-sm text-muted-foreground italic">A ser informado em breve</p>
+                  <p className="mt-1 text-sm text-muted-foreground italic">Banco do Brasil</p>
                 </div>
                 <div className="grid grid-cols-2 gap-3">
                   <div>

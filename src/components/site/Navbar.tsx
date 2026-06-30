@@ -1,19 +1,27 @@
 import { useEffect, useState } from "react";
 import { Menu, X, Heart } from "lucide-react";
+import { useRouterState } from "@tanstack/react-router";
 import logoAsset from "@/assets/logo.png.asset.json";
 
 const links = [
-  { href: "#inicio", label: "Início" },
-  { href: "#quem-somos", label: "Quem Somos" },
-  { href: "#projetos", label: "Projetos" },
-  { href: "#numeros", label: "Impacto" },
-  { href: "#galeria", label: "Galeria" },
-  { href: "#contato", label: "Contato" },
+  { href: "/#inicio", label: "Início" },
+  { href: "/#quem-somos", label: "Quem Somos" },
+  { href: "/#projetos", label: "Projetos" },
+  { href: "/#numeros", label: "Impacto" },
+  { href: "/#galeria", label: "Galeria" },
+  { href: "/#contato", label: "Contato" },
 ];
 
-export function Navbar() {
+type NavbarProps = {
+  forceSolid?: boolean;
+};
+
+export function Navbar({ forceSolid = false }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const isHome = pathname === "/";
+  const solid = forceSolid || scrolled || !isHome;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -24,11 +32,10 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${solid
           ? "bg-background/85 backdrop-blur-xl border-b border-border shadow-[0_1px_0_rgba(0,0,0,0.02)]"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="container-tight flex items-center justify-between h-24 md:h-28">
         <a href="#inicio" className="flex items-center gap-3 group">
@@ -38,8 +45,8 @@ export function Navbar() {
             className="h-20 w-20 md:h-24 md:w-24 rounded-full object-contain bg-white transition-transform group-hover:scale-105"
           />
           <span className="hidden sm:flex flex-col leading-tight">
-            <span className="font-display text-base md:text-lg font-semibold text-foreground">Instituto Irmã Dulce</span>
-            <span className="text-[10px] md:text-xs uppercase tracking-[0.18em] text-muted-foreground">São Paulo</span>
+            <span className={`font-display text-base md:text-lg font-semibold transition-colors ${solid ? "text-foreground" : "text-white"}`}>Instituto Irmã Dulce</span>
+            <span className={`text-[10px] md:text-xs uppercase tracking-[0.18em] transition-colors ${solid ? "text-muted-foreground" : "text-white/80"}`}>São Paulo</span>
           </span>
         </a>
 
@@ -48,7 +55,7 @@ export function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="px-3.5 py-2 text-sm font-medium text-foreground/75 hover:text-primary transition-colors rounded-md"
+              className={`px-3.5 py-2 text-sm font-medium transition-colors rounded-md ${solid ? "text-foreground/75 hover:text-primary" : "text-white/85 hover:text-white"}`}
             >
               {l.label}
             </a>
