@@ -18,7 +18,7 @@ export default defineConfig({
     preview: {
       host: "::",
       port: 1007,
-      allowedHosts: [".kauanrodrigues.com.br", "institutoirmadulce.kauanrodrigues.com.br"],
+      allowedHosts: ["institutoirmadulce.kauanrodrigues.com.br"],
     },
   },
 });
