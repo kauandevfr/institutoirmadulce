@@ -26,7 +26,7 @@ import {
 import nfpHero from "@/assets/nfp-hero.jpg";
 
 const NFP_ANDROID =
-  "https://play.google.com/store/apps/details?id=br.gov.sp.fazenda.dec.nfp";
+  "https://apps.apple.com/br/app/nota-fiscal-paulista/id1190556528";
 const NFP_IOS =
   "https://apps.apple.com/br/app/nota-fiscal-paulista/id1438815830";
 const NFP_WEB = "https://www.nfp.fazenda.sp.gov.br/";
@@ -348,7 +348,7 @@ function NotaFiscalPaulistaPage() {
         {/* Chamada Final */}
         <section className="py-24 md:py-32 bg-secondary/50">
           <div className="container-tight">
-            <div className="relative overflow-hidden rounded-3xl bg-card border border-border p-10 md:p-16 shadow-soft">
+            <div className="bg-primary relative overflow-hidden rounded-3xl bg-card border border-border p-10 md:p-16 shadow-soft">
               <div
                 className="absolute inset-0 -z-10 opacity-90"
                 style={{ background: "var(--gradient-hero)" }}

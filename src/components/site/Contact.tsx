@@ -1,6 +1,24 @@
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export function Contact() {
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    formData.append("access_key", "d619b33e-be34-4a73-819f-94aa8c6d4efa");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+    if (data.success) {
+      e.target.reset();
+    } else {
+    }
+  };
+
   return (
     <section id="contato" className="py-24 md:py-32">
       <div className="container-tight grid lg:grid-cols-12 gap-12">
@@ -42,15 +60,7 @@ export function Contact() {
 
         <form
           className="lg:col-span-7 rounded-3xl bg-card border border-border shadow-soft p-8 md:p-10 space-y-5"
-          onSubmit={(e) => {
-            e.preventDefault();
-            const data = new FormData(e.currentTarget);
-            const subject = encodeURIComponent(`Contato site — ${data.get("nome")}`);
-            const body = encodeURIComponent(
-              `Nome: ${data.get("nome")}\nE-mail: ${data.get("email")}\nTelefone: ${data.get("telefone")}\n\n${data.get("mensagem")}`,
-            );
-            window.location.href = `mailto:institutoirmadulce1@gmail.com?subject=${subject}&body=${body}`;
-          }}
+          onSubmit={onSubmit}
         >
           <div className="grid sm:grid-cols-2 gap-5">
             <Field id="nome" label="Nome completo" required />
@@ -73,7 +83,7 @@ export function Contact() {
           </div>
           <button
             type="submit"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-3.5 text-sm font-semibold shadow-soft hover:shadow-elegant hover:-translate-y-0.5 transition-all"
+            className="cursor-pointer inline-flex items-center justify-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-3.5 text-sm font-semibold shadow-soft hover:shadow-elegant hover:-translate-y-0.5 transition-all"
           >
             Enviar mensagem
           </button>
