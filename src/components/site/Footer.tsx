@@ -56,7 +56,17 @@ export function Footer() {
 
       <div className="container-tight mt-14 pt-8 border-t border-background/10 flex flex-col sm:flex-row gap-4 items-center justify-between text-xs text-background/55">
         <p>© {new Date().getFullYear()} Instituto Irmã Dulce SP. Todos os direitos reservados.</p>
-        <p>Feito com <Heart className="inline h-3 w-3 text-primary" /> para servir.</p>
+        <p className="font-semibold text-white">
+          Desenvolvido por:{' '}
+          <a
+            href="https://kauanrodrigues.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white underline hover:text-gray-300 transition cursor-pointer"
+          >
+            Kauan Rodrigues
+          </a>
+        </p>
       </div>
     </footer>
   );
