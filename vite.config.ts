@@ -1,24 +1,25 @@
-// @lovable.dev/vite-tanstack-config already includes the following — do NOT add them manually
-// or the app will break with duplicate plugins:
-//   - tanstackStart, viteReact, tailwindcss, tsConfigPaths, nitro (build-only using cloudflare as a default target),
-//     componentTagger (dev-only), VITE_* env injection, @ path alias, React/TanStack dedupe,
-//     error logger plugins, and sandbox detection (port/host/strictPort).
-// You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
   tanstackStart: {
-    // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
     server: {
       entry: "server",
-      host: "::",
-      port: 1007,
     },
+  },
+
+  vite: {
+    server: {
+      host: "::",
+      port: 1003,
+    },
+
     preview: {
       host: "::",
-      port: 1007,
-      allowedHosts: ["institutoirmadulce.kauanrodrigues.com.br"],
+      port: 1003,
+      allowedHosts: [
+        ".kauanrodrigues.com.br",
+        "institutoirmadulce.kauanrodrigues.com.br",
+      ],
     },
   },
 });
