@@ -14,7 +14,7 @@ export function Contact() {
 
     const data = await response.json();
     if (data.success) {
-      e.target.reset();
+      e.currentTarget.reset();
     } else {
     }
   };
